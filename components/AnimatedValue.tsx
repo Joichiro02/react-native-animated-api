@@ -11,8 +11,10 @@ const AnimatedValue = () => {
     const bottomValue = useState(new Animated.Value(0))[0]; //the purpose of [0] is to get only the value of the useState and not to have a setState
     const moveBall = () => {
         Animated.timing(bottomValue, {
+            //you can also use the Animation.spring to have a bounce effect
             toValue: 200, // the place of the ball where going to
             duration: 1000,
+            delay: 4000,
             useNativeDriver: false,
         }).start();
     };

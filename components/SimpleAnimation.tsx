@@ -8,10 +8,10 @@ import {
 } from "react-native";
 
 const SimpleAnimation = () => {
-    const value = useState(new Animated.ValueXY({ x: 0, y: 0 }))[0];
+    const value = useState(new Animated.ValueXY({ x: 0, y: 0 }))[0]; //initail position of the ball
     const moveBall = () => {
         Animated.timing(value, {
-            toValue: { x: 0, y: -200 },
+            toValue: { x: 0, y: -200 }, // the place of the ball where going to
             duration: 1000,
             useNativeDriver: false,
         }).start();

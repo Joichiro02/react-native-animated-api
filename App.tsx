@@ -1,11 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import AnimatedValue from "./components/AnimatedValue";
 import SimpleAnimation from "./components/SimpleAnimation";
 
 export default function App() {
     return (
         <View style={styles.container}>
-            <SimpleAnimation />
+            {/* <SimpleAnimation /> */}
+            <AnimatedValue />
         </View>
     );
 }

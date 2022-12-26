@@ -3,6 +3,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import AnimatedValue from "./components/AnimatedValue";
 import BasicAnimation from "./components/reactNativeReanimatedLibrary/BasicAnimation";
 import BasicHandlerGesture from "./components/reactNativeReanimatedLibrary/BasicHandlerGesture";
+import ScrollViewAnimation from "./components/reactNativeReanimatedLibrary/ScrollViewAnimation";
 import SimpleAnimation from "./components/SimpleAnimation";
 
 export default function App() {
@@ -12,7 +13,8 @@ export default function App() {
             {/* <AnimatedValue /> */}
             {/* <BasicAnimation /> */}
             <GestureHandlerRootView style={{ flex: 1 }}>
-                <BasicHandlerGesture />
+                {/* <BasicHandlerGesture /> */}
+                <ScrollViewAnimation />
             </GestureHandlerRootView>
         </View>
     );
